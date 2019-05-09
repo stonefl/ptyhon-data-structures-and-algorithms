@@ -1,7 +1,6 @@
-# Introduction
-
-Python contains many built-in data types. These include four numeric types(`int`, `float`, `complex`, `bool`), four sequence types (`str`, `list`, `tuple`, `range`), one mapping type (`dict`), and two set types (`set`, `fronzenset`). It is also possible to create user-defined objects, such as functions or classes. We will starts with string in this chapter and the remaining built-in types in the next chapters.
-
+---
+title: String
+---
 # String
 
 In Python, strings are **immutable** text sequence objects, with each character representing an element in the sequence. Python does not have specific data type for characters, so characters are represented as a string with a single element. 
@@ -271,7 +270,7 @@ ValueError: substring not found
 |rsplit(sep=None, maxsplit=-1) | Return a list of the words in the string, using sep as the delimiter string. |
 |split(sep=None, maxsplit=-1) | Return a list of the words in the string, using _sep_ as the delimiter string. |
 |splitlines([keepends]) | Return a list of the lines in the string, breaking at line boundaries. |
-|maketrans(x[, y[, z]]) | This static method returns a translation table usable for `str.translate()`.|
+|maketrans(x[, y[, z]]) | returns a translation table that maps each character in the x into the character at the same position in the y string. This table is usable for `str.translate()`. |
 |translate(table) | Return a copy of the string in which each character has been mapped through the given translation table. |
 
 
@@ -306,13 +305,22 @@ ValueError: substring not found
 ['1', '2,3']
 >>> '1,2,,3,'.split(',')
 ['1', '2', '', '3', '']
+>>> ''.split('\n')
+['']
+>>> 'Two lines\n'.split('\n')
+['Two lines', '']
 >>> '1,2,3'.rsplit(',', maxsplit=1)
 ['1,2', '3']
 >>> 'ab c\n\nde fg\rkl\r\n'.splitlines()
 ['ab c', '', 'de fg', 'kl']
 >>> 'ab c\n\nde fg\rkl\r\n'.splitlines(keepends=True)
 ['ab c\n', '\n', 'de fg\r', 'kl\r\n']
->>>
+>>> "".splitlines() #compare to split('\n')
+[]
+>>> "One line\n".splitlines() #compare to split('\n')
+['One line']
+
+
 >>> intab = "aeiou"
 >>> outtab = "12345"
 >>> trantab = str.maketrans(intab, outtab)

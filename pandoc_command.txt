@@ -1,0 +1,3 @@
+If multiple input files are given, pandoc will concatenate them all (with blank lines between them) before parsing. -- from Pandoc website
+
+Pandoc command: pandoc -s input1.md input2.md input3.md -o output.html
