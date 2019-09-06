@@ -1,7 +1,5 @@
----
-title: String
----
-# String
+
+# Chapter 02: String
 
 In Python, strings are **immutable** text sequence objects, with each character representing an element in the sequence. Python does not have specific data type for characters, so characters are represented as a string with a single element. 
 
