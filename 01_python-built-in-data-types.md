@@ -5,18 +5,18 @@ The built-in data types are outlined in the following table:
 
 | Category     | Name     | Description     |
 |     :---     | ----     | ----            |
-|   None   |  `None`    | A null object     |
-| Numeric  |  `int`     |   An integer data type   |
-|          | `float`    |   A floating-point number   |
-|      |      |      |
-|      |      |      |
-|      |      |      |
-|      |      |      |
-|      |      |      |
-|      |      |      |
-|      |      |      |
-|      |      |      |
-|      |      |      |
+|   None   |  `None`    | a null object     |
+| Numeric  |  `int`     |   an integer data type   |
+|          | `float`    |   a floating-point number   |
+|      |  `complex`    |  stores a complex number    |
+|      | `bool`     |  a boolean type and returns `true` or `false`    |
+| Sequence    |   `str`   | a tring of characters      |
+|      |   `list`   | a list of arbitrary objects     |
+|      | `tuple`     |   a group of arbitrary items   |
+|      |   `range`   |   a range of integers   |
+| Mapping     |   `dict`   | a dictionary data type for **key/value** objects     |
+|   Set   |   `set`   | a mutable and unordered collection of unique items     |
+|      |  `frozenset`    | an immutable set     |
 
 
 

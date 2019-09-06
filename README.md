@@ -7,7 +7,7 @@ Data structures and algorithms are the most fundamental concepts in computing. T
 
 
 
-## [Chapter 01 Overview of Built-in Data Types](./01_Python-built-in-data-types.md)
+## [Chapter 01: Overview of Built-in Data Types](01_python-built-in-data-types.md)
 
 
 
